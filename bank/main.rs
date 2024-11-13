@@ -4,7 +4,6 @@ struct Account {
     balance: i32,
     holder: String,
 }
-
 impl Account {
     fn new(id: u32, holder: String) -> Self {
         Account {
@@ -25,11 +24,18 @@ impl Bank {
     }
 }
 
-fn print_accounts(accounts: Vec<Account>) {
-    println!("{:#?}", accounts);
+fn add_account(bank: &mut Bank, account:  Account) {
+    bank.accounts.push(account);
 }
-fn main() {
-    let bank = Bank::new();
 
-    print_accounts(bank.accounts);
+fn main() {
+    let mut bank = Bank::new();
+    let account = Account::new(
+        1,
+        String::from("me")
+    );
+
+    add_account(&mut bank, account);
+
+    println!("{:#?}", bank);
 }
