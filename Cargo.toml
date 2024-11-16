@@ -13,3 +13,7 @@ path = "deck/main.rs"
 [[bin]]
 name = "bank"
 path = "bank/main.rs"
+
+[[bin]]
+name = "media"
+path = "media/main.rs"
