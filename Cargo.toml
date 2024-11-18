@@ -17,3 +17,7 @@ path = "bank/main.rs"
 [[bin]]
 name = "media"
 path = "media/main.rs"
+
+[[bin]]
+name = "logs"
+path = "logs/main.rs"
