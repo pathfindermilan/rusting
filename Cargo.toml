@@ -21,3 +21,7 @@ path = "media/main.rs"
 [[bin]]
 name = "logs"
 path = "logs/main.rs"
+
+[[bin]]
+name = "iter"
+path = "iter/main.rs"
