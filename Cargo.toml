@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+num-traits = "0.2.19"
 rand = "0.8.5"
 
 [[bin]]
@@ -25,3 +26,15 @@ path = "logs/main.rs"
 [[bin]]
 name = "iter"
 path = "iter/main.rs"
+
+[[bin]]
+name = "lifetimes"
+path = "lifetimes/main.rs"
+
+[[bin]]
+name = "generics"
+path = "generics/main.rs"
+
+[[bin]]
+name = "traits"
+path = "traits/main.rs"
